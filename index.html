@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calidad</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div>
+        <h1>Calcula tu figura</h1>
+        <h4> Selecciona la cantidad de lados que desea calcular </h4>
+        <select id="lados" onchange="seleccion()">
+            <option value=3>3</option>
+            <option value=4>4</option>
+        </select>
+        <br><br>
+        <label for=value1>Lado 1:</label>
+        <input id="value1" type="text" onblur="validaNumericos();"
+            onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" />
+        <br><br>
+        <label for=value2>Lado 2:</label>
+        <input id="value2" type="text" onblur="validaNumericos();"
+            onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" />
+        <br><br>
+        <label for=value3>Lado 3:</label>
+        <input id="value3" type="text" onblur="validaNumericos();"
+            onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" />
+        <br><br>
+        <label for=value4>Lado 4:</label>
+        <input id="value4" type="text" onblur="validaNumericos();"
+            onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" />
+        <br><br>
+        <button type="button" onclick="calcular()"> Calcular</button>
+
+    </div>
+</body>
+
+</html>
