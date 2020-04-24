@@ -17,20 +17,20 @@
             <option value=4>4</option>
         </select>
         <br><br>
-        <label for=value1>Lado 1:</label>
+        <label id='label1' for=value1>Lado 1:</label>
         <input id="value1" type="text" onblur="validaNumericos();"
             onkeypress="if ( isNaN( String.fromCharCode(event.keyCode)) || event.keyCode==32) return false;" />
         <br><br>
-        <label for=value2>Lado 2:</label>
+        <label id='label2' for=value2>Lado 2:</label>
         <input id="value2" type="text" onblur="validaNumericos();"
             onkeypress="if ( isNaN( String.fromCharCode(event.keyCode)) || event.keyCode==32) return false;" />
         <br><br>
-        <label for=value3>Lado 3:</label>
+        <label id='label3' for=value3>Lado 3:</label>
         <input id="value3" type="text" onblur="validaNumericos();"
             onkeypress="if ( isNaN( String.fromCharCode(event.keyCode)) || event.keyCode==32) return false;" />
         <br><br>
-        <label for=value4>Lado 4:</label>
-        <input id="value4" type="text" onblur="validaNumericos();"
+        <label id='label4' for=value4 style="display: none;">Lado 4: </label>
+        <input id="value4" type="text" style="display: none;" onblur="validaNumericos();"
             onkeypress="if ( isNaN( String.fromCharCode(event.keyCode)) || event.keyCode==32) return false;" />
         <br><br>
         <button type="button" onclick="calcular()"> Calcular</button>
