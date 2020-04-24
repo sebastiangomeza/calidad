@@ -12,8 +12,9 @@ function validaNumericos() {
     var valor = inputtxt.value;
     for (i = 0; i < valor.length; i++) {
         var code = valor.charCodeAt(i);
-        if (code <= 48 || code >= 57) {
+        if (code <= 47 || code >= 57) {
             inputtxt.value = "";
+            alert('por favor ingresar números enteros positivos')
             return;
         }
     }
