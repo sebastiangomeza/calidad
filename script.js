@@ -41,7 +41,7 @@ function calcular() {
             return;
         }
         if (lado1 == 0 || lado2 == 0 || lado3 == 0) {
-            alert('por favor ingresar números enteros positivos mayores a cero')
+            alert('por favor ingresar números enteros mayores a cero')
             return;
         }
         tresLados(lado1, lado2, lado3)
